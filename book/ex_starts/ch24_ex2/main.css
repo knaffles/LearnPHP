@@ -1,0 +1,236 @@
+/* the styles for the HTML elements */
+body {
+    margin-top: 0;
+    background-color: rgb(128, 141, 159);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    font-size: 150%;
+    margin: 0;
+    padding: .5em 0 .25em;
+}
+h2 {
+    font-size: 120%;
+    margin: 0;
+    padding: .5em 0 .25em;
+}
+h1, h2 {
+    color: rgb(205, 163, 94);
+}
+
+ul {
+    margin: 0 0 1em 0;
+    padding: 0 0 0 2.5em;
+}
+li {
+    margin: 0;
+    padding: .25em;
+}
+a {
+    color: rgb(69, 85, 106);   
+    font-weight: bold;
+    
+}
+a:hover {
+    color: blue;
+}
+p {
+    margin: 0;
+    padding: .25em 0;
+}
+
+form {
+    margin: .5em 0;
+    width: 100%;
+}
+label {
+    width: 8em;
+    padding-right: .5em;
+    padding-bottom: .5em;
+    text-align: right;
+    float: left;
+}
+textarea {
+    width: 25em;
+    margin-bottom: .5em;
+}
+table {
+    border-collapse: collapse;
+}
+td, th {
+    margin: 0;
+    padding: .15em 0;
+}
+br {
+    clear: both;
+}
+
+/* the styles for the div tags that divide the page into sections */
+#page {
+    width: 850px;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid rgb(119, 75, 77);
+}
+#header {
+    margin: 0;
+    border-bottom: 2px solid rgb(119, 75, 77);
+    padding: .5em 2em;
+}
+#header h1 {
+    margin: 0;
+    padding: .5em 0;
+    color: black;
+}
+#main {
+    margin: 0;
+    padding: .5em 2em;
+}
+#sidebar {
+    float: left;
+    width: 170px;
+}
+#sidebar h2 {
+    padding: 1em 0 .25em;
+}
+#sidebar ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+    margin-bottom: 2em;
+}
+#sidebar li {
+    margin: 0;
+    padding-bottom: .25em;
+}
+#content {
+    float: left;
+    width: 580px;
+    padding-bottom: 1.5em;
+}
+#left_column {
+    float: left;
+    width: 150px;
+    padding-left: .5em;
+}
+#right_column {
+    float: left;
+    width: 300px;
+    padding-left: 1em;
+}
+#footer {
+    clear: both;
+    margin-top: 1em;
+    padding-right: 1em;
+    border-top: 2px solid rgb(119, 75, 77);
+}
+#footer p {
+    text-align: right;
+    font-size: 80%;
+    margin: 1em 0;
+}
+/********************************************************************
+* styles for the classes
+********************************************************************/
+.right {
+    text-align: right;
+}
+.left {
+    text-align: left;
+}
+.cart_qty  {
+    text-align: right;
+    width: 3em;
+}
+.button_form {
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+.inline {
+    display: inline;
+    margin-left: .5em;
+}
+/********************************************************************
+* Styles for the Product Manager application
+********************************************************************/
+#category_table form {
+    margin: 0;
+}
+#category_table td {
+    margin: 0;
+    padding: .15em .5em 0 0;
+}
+#add_category_form {
+    margin: 0;
+}
+#add_category_form input {
+    margin-right: .5em;  
+}
+#add_admin_user_form  label {
+    width: 8.5em;
+}
+#edit_and_delete_buttons {
+    margin-bottom: .5em;
+}
+#edit_and_delete_buttons form {
+    display: inline;
+}
+#image_manager input {
+    margin: .25em;
+}
+/********************************************************************
+* Styles for the Product Catalog application
+********************************************************************/
+#product_image_column {
+    width: 8em;
+    text-align: center;
+}
+/*******************************************************************/
+#add_to_cart_form {
+    margin: .25em;
+}
+#add_to_cart_form input {
+    float: none;
+}
+/*******************************************************************/
+#cart {
+    margin: 0;
+    padding: 1em .25em;
+    border-collapse: collapse;
+    width: 100%;
+}
+#cart_header th {
+    border-bottom: 2px solid black;
+}
+#cart_footer td {
+    border-top: 2px solid black;
+    font-style: bold;
+}
+#cart td {
+    padding: .25em 0;
+}
+/*******************************************************************/
+#login_form label {
+    width: 5em;
+    padding-right: 1em;
+}
+#login_form input[text] {
+ 
+}
+#payment_form label {
+    width: 8em;
+    padding-right: 1em;
+}
+#payment_form input[text] {
+    width: 5em;
+    margin: 0;
+    padding-right: 1em;
+}
+#add_category label {
+    text-align: left;
+    width: 3em;
+}
+#add_category input { 
+    margin-right: .25em;
+}

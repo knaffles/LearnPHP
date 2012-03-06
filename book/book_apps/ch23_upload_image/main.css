@@ -1,0 +1,88 @@
+/* the styles for the HTML elements */
+body {
+    margin-top: 0;
+    background-color: rgb(128, 141, 159);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    font-size: 150%;
+    margin: 0;
+    padding: .5em 0 .25em;
+}
+h2 {
+    font-size: 120%;
+    margin: 0;
+    padding: .25em 0 .5em;
+}
+h1, h2 {
+    color: rgb(205, 163, 94);
+}
+
+ul {
+    margin: 0 0 1em 0;
+    padding: 0 0 0 2.5em;
+}
+li {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+li {
+    padding-bottom: 0.5em;
+}
+
+a {
+    color: rgb(69, 85, 106);   
+    font-weight: bold;
+    
+}
+a:hover {
+    color: blue;
+}
+
+form {
+    margin: .25em 0 .5em;
+}
+br {
+    clear: left;
+}
+img {
+    border: none;
+    vertical-align: middle;
+}
+
+/* the styles for the div tags that divide the page into sections */
+#page {
+    width: 760px;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid rgb(119, 75, 77);
+}
+#header {
+    margin: 0;
+    border-bottom: 2px solid rgb(119, 75, 77);
+    padding: .5em 2em;
+}
+#header h1 {
+    margin: 0;
+    padding: .5em 0;
+    color: black;
+}
+#main {
+    margin: 0;
+    padding: .5em 2em;
+}
+
+#upload_button {
+    margin: .5em 0;
+}
+#upload_form label {
+    padding-left: 1em;
+    padding-bottom: .5em;
+}

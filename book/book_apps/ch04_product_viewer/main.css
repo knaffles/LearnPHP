@@ -1,0 +1,92 @@
+/* the styles for the HTML elements */
+h1 {
+    font-size: 150%;
+    margin: 0;
+    padding: .5em 0 .25em;
+}
+h2 {
+    font-size: 120%;
+    margin: 0;
+    padding: .25em 0 .5em;
+}
+h1, h2 {
+    color: rgb(205, 163, 94);
+}
+
+ul {
+    margin: 0 0 1em 0;
+    padding: 0 0 0 2.5em;
+}
+li {
+    margin: 0;
+    padding: 0;
+}
+
+ul.nav {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+ul.nav li {
+    padding-bottom: 0.5em;
+}
+
+a {
+    color: rgb(69, 85, 106);   
+    font-weight: bold;
+    
+}
+a:hover {
+    color: blue;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td, th {
+    border: 1px dashed black;
+    padding: .2em .5em .2em .5em;
+    vertical-align: top;
+    text-align: left;
+}
+br {
+    clear: both;
+}
+
+/* the styles for the body tag */
+body {
+    margin-top: 0;
+    background-color: rgb(128, 141, 159);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* the styles for the div tags that divide the page into sections */
+#page {
+    width: 760px;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid rgb(119, 75, 77);
+}
+#main {
+    margin: 0;
+    padding: 1em 2em 2em;
+}
+#sidebar {
+    float: left;
+    width: 150px;
+}
+
+#content {
+    float: left;
+    width: 500px;
+}
+#footer {
+    margin: 0;
+    padding-top: 1.5em;
+    clear: both;
+}
+.right {
+    text-align: right;
+}

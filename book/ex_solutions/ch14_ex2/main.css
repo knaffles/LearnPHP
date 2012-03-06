@@ -1,0 +1,127 @@
+/********************************************************************
+* Description: Main style sheet for web site
+********************************************************************/
+
+/* the styles for the body tag */
+body {
+    margin-top: 0;
+    background-color: rgb(128, 141, 159);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 81.25%;
+}
+
+/* the styles for the div tags that divide the page into sections */
+#page {
+    width: 760px;
+    margin: 0 auto;
+    background-color: white;
+    border: 3px solid rgb(119, 75, 77);
+    border-top: none;
+}
+
+#header, #main, #footer {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+#header {
+    border-bottom: 1px solid rgb(119, 75, 77);
+}
+
+#main {
+    padding-top: 1em;
+    padding-left: 1em;
+}
+
+#footer {
+    border-top: 1px solid rgb(119, 75, 77);
+    padding-bottom: 0.5em;
+}
+
+/* the styles for the XHTML elements */
+h1, h2 {
+    color: rgb(205, 163, 94);
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+h1 { 
+    font-size: 150%;
+    margin-top: 0;
+    padding-top: 0.5em;
+}
+h2 { 
+    font-size: 120%; 
+}
+
+ul {
+    margin: 0 0 1em 0;
+    padding: 0 0 0 2.5em;
+}
+li {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: rgb(69, 85, 106);
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px dashed rgb(205, 163, 94);
+}
+a:hover {
+    border-bottom: 1px solid rgb(205, 163, 94);
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td, th {
+    border: 1px dashed black;
+    padding: 5px;
+    vertical-align: top;
+    text-align: left;
+}
+
+/* the styles for the XHTML classes */
+.copyright {
+    color: rgb(69, 85, 106);
+    font-size: 80%;
+    text-align: right;
+    margin-bottom: 0;
+}
+.top {
+    margin-top: 0;
+}
+ul.nav {
+    margin: 0;
+    padding-left: 1.25em;
+    list-style-type: none;
+}
+ul.nav li {
+    padding-bottom: 0.5em;
+}
+
+/********************************************************************
+* Additional styles for the Product Manager application
+********************************************************************/
+#add_product_form label {
+    width: 7em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    float: left;
+}
+
+#add_product_form input {
+    float: left;
+}
+
+#add_product_form input[text] {
+    width: 15em;
+}
+
+#add_product_form br {
+    clear: left;
+}
+
+#delete_product_form {
+    margin: 0; /* necessary for IE */
+}
