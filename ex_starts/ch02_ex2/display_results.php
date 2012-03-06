@@ -17,8 +17,12 @@
         $error_message = 'Interest rate is a required field.'; }
     else if ( !is_numeric($interest_rate) )  {
         $error_message = 'Interest rate must be a valid number.'; }
-    else if ( $interest_rate <= 0 ) {
-        $error_message = 'Interest rate must be greater than zero.'; }
+    else if ( $interest_rate <= 0 || $interest_rate > 15 ) {
+        $error_message = 'Interest rate must be greater than zero and less than or equal to 15.'; }
+
+    // validate years
+    else if ( $years <=0 || $years > 50 ) {
+        $error_message = 'Number of years must be greater than zero and less than or equal to 50.'; }
 
     // set error message to empty string if no invalid entries
     else {
@@ -63,5 +67,6 @@
         <label>Future Value:</label>
         <span><?php echo $future_value_f; ?></span><br />
     </div>
+    <p>This calculation was done on <?php echo date('n/j/Y'); ?></p>
 </body>
 </html>
