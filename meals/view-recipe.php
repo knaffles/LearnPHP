@@ -6,25 +6,25 @@
 require_once('database.php');
 
 // Get the recipe ID
-if (!isset($_GET['recipeID'])) {
+if (!isset($_GET['recipe_id'])) {
 	echo "Error: no recipe ID specified";
 	exit();
 } else {
-	$recipeID = $_GET['recipeID'];	
+	$recipe_id = $_GET['recipe_id'];	
 }
 
 // Display the recipe name
-$query = "SELECT name FROM recipes WHERE id = $recipeID";
+$query = "SELECT name FROM recipes WHERE rid = $recipe_id";
 $recipe_names = $db->query($query);
 $recipe_names = $recipe_names->fetch();
 $recipe_name = $recipe_names[0];
 
 // Display all recipe ingredients
-$query = "SELECT ingredients.name from ingredients
-	INNER JOIN recipeIngredients ON ingredients.id = recipeIngredients.ingredientsId
-	INNER JOIN recipes ON recipeIngredients.recipesId = recipes.Id
-	WHERE recipes.id = $recipeID";
-$ingredients_names = $db->query($query);
+$query = "SELECT ingredients.iid, ingredients.name from ingredients
+	INNER JOIN recipes_ingredients ON ingredients.iid = recipes_ingredients.ingredients_id
+	INNER JOIN recipes ON recipes_ingredients.recipes_id = recipes.rid
+	WHERE recipes.rid = $recipe_id";
+$ingredients = $db->query($query);
 
 ?>
 
@@ -39,11 +39,12 @@ $ingredients_names = $db->query($query);
 	<label>Add new ingredient</label>
 	<input name="ingredient" type="text" size="10" />
 	<input type="submit" name="submit" value="Add" />
-	<input type="hidden" name="recipeID" value="<?php echo $recipeID ?>" />
+	<input type="hidden" name="recipe_id" value="<?php echo $recipe_id ?>" />
 </form>
 <ul>
-<?php foreach ($ingredients_names as $ingredient_name): ?>
-	<li><?php echo $ingredient_name[0] ?></li>
+<?php foreach ($ingredients as $ingredient): ?>
+	<li><?php echo $ingredient[1] ?> (<a href="delete-ingredient.php?recipe_id=<?php echo $recipe_id; ?>&amp;ingredient_id=<?php echo $ingredient[0]; ?>">delete</a>)</li>
 <?php endforeach; ?>
 </ul>
+<p><a href="show-recipes.php">&lt; Show all recipes</a></p>
 </html>
